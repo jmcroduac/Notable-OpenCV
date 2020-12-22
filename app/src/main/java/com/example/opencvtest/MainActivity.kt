@@ -111,13 +111,13 @@ class MainActivity : Activity(), CameraBridgeViewBase.CvCameraViewListener2 {
         val mat = frame.gray()
 
         // native call to process current camera frame
-        adaptiveThresholdFromJNI(mat.nativeObjAddr)
+        otsuThresholdFromJNI(mat.nativeObjAddr)
 
         // return processed frame for live preview
         return mat
     }
 
-    private external fun adaptiveThresholdFromJNI(matAddr: Long)
+    private external fun otsuThresholdFromJNI(matAddr: Long)
 
     companion object {
 
