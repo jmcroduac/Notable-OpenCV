@@ -13,7 +13,7 @@ void JNICALL Java_com_example_opencvtest_MainActivity_otsuThresholdFromJNI
 (JNIEnv *env, jobject instance, jlong matAddr) {
         // get Mat from raw address
         Mat &mat = *(Mat *) matAddr;
-        cv::threshold(mat, mat, 0, 255, CV_THRESH_OTSU);
+        cv::threshold(mat, mat, 0, 255, THRESH_OTSU);
 
     }
 }
