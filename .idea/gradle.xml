@@ -10,9 +10,10 @@
         <option name="gradleJvm" value="1.8" />
         <option name="modules">
           <set>
-            <option value="$USER_HOME$/.android/OpenCV-android-sdk/sdk" />
             <option value="$PROJECT_DIR$" />
             <option value="$PROJECT_DIR$/app" />
+            <option value="$PROJECT_DIR$/home/vince/.android/OpenCV-android-sdk/sdk" />
+            <option value="$PROJECT_DIR$/openCVLibrary343" />
           </set>
         </option>
         <option name="resolveModulePerSourceSet" value="false" />
