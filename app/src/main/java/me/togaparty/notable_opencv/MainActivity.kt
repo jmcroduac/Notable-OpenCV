@@ -4,7 +4,10 @@ import android.content.Context
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import androidx.fragment.app.FragmentContainerView
+import me.togaparty.notable_opencv.utils.ExampleItem
+import org.opencv.android.OpenCVLoader
 import java.io.File
+
 
 class MainActivity : AppCompatActivity() {
 
@@ -14,7 +17,9 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
         container = findViewById(R.id.fragment_container)
+
     }
+
 
     companion object {
 
